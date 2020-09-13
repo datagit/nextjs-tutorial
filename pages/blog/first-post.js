@@ -1,43 +1,37 @@
 import Head from 'next/head'
 import Link from 'next/link'
 
-export default function Home() {
-  return (
-    <div className="container">
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+export default function FirstPost() {
+    return (
+        <div className="container">
+            <Head>
+                <title>first post</title>
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
 
-      <main>
-        <div>
-          <ul>
-            <li>
-              <Link href="/">
-                <a>Home</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/blog/first-post">
-                <a>first post</a>
-              </Link>
-            </li>
-          </ul>
-        </div>
-      </main>
+            <main>
+                <h1 className="title">
+                    First Post
+                </h1>
+                <h2>
+                    <Link href="/">
+                        <a>Back to home</a>
+                    </Link>
+                </h2>
+            </main>
 
-      <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
-        </a>
-      </footer>
+            <footer>
+                <a
+                    href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Powered by{' '}
+                    <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
+                </a>
+            </footer>
 
-      <style jsx>{`
+            <style jsx>{`
         .container {
           min-height: 100vh;
           padding: 0 0.5rem;
@@ -168,7 +162,7 @@ export default function Home() {
         }
       `}</style>
 
-      <style jsx global>{`
+            <style jsx global>{`
         html,
         body {
           padding: 0;
@@ -182,6 +176,6 @@ export default function Home() {
           box-sizing: border-box;
         }
       `}</style>
-    </div>
-  )
+        </div>
+    )
 }
