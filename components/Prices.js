@@ -7,7 +7,7 @@ class Prices extends React.Component {
             <div>
                 <ul>
                     <li>
-                        Bitcion rate for {this.props.bpi[this.state.currency].description}:
+                        Bitcoin rate for {this.props.bpi[this.state.currency].description}:
                         <span>{this.props.bpi[this.state.currency].code}</span>
                         <strong>{this.props.bpi[this.state.currency].rate}</strong>
                     </li>
