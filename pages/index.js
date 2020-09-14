@@ -13,13 +13,28 @@ const Index = (props) => (
     </Layout>
 );
 
-Index.getInitialProps = async function() {
-    const res = await fetch('https://api.coindesk.com/v1/bpi/currentprice.json');
-    const data = await res.json();
-    console.log(data)
-    return {
-        bpi: data.bpi
-    };
+// Index.getInitialProps = async function() {
+//     const res = await fetch('https://api.coindesk.com/v1/bpi/currentprice.json');
+//     const data = await res.json();
+//     console.log('getInitialProps: DATA >>');
+//     console.log(data.bpi);
+//     return {
+//         bpi: data.bpi
+//     };
+// }
+
+
+//This gets called on every request
+export async function getServerSideProps() {
+    // Fetch data from external API
+    const res = await fetch('https://api.coindesk.com/v1/bpi/currentprice.json')
+    const data = await res.json()
+
+    console.log('getServerSideProps');
+    console.log(data);
+    // Pass data to the page via props
+    return { props: data }
 }
+
 
 export default Index;
