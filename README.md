@@ -10,7 +10,9 @@ This is a starter template for [Learn Next.js](https://nextjs.org/learn).
         getServerSideProps
     Client side rerendeing: React Hooks library for data fetching
         https://swr.vercel.app/
-        
+    debug javascript with PHPStrom
+        client: https://www.evernote.com/shard/s436/client/snv?noteGuid=7dd35fba-f6ea-4495-85f1-d18214fc784f&noteKey=ab549296f7a0d104&sn=https%3A%2F%2Fwww.evernote.com%2Fshard%2Fs436%2Fsh%2F7dd35fba-f6ea-4495-85f1-d18214fc784f%2Fab549296f7a0d104&title=Run%252FDebug%2BConfigurations%2Band%2Bnextjs-tutorial%2B%25E2%2580%2593%2Bpackage.json
+        server: https://www.evernote.com/shard/s436/client/snv?noteGuid=9e2163e0-1568-480f-b8ed-fc6e51f4ccd2&noteKey=d25aa38c4c3b7987&sn=https%3A%2F%2Fwww.evernote.com%2Fshard%2Fs436%2Fsh%2F9e2163e0-1568-480f-b8ed-fc6e51f4ccd2%2Fd25aa38c4c3b7987&title=Run%252FDebug%2BConfigurations%2Band%2Bnextjs-tutorial%2B%25E2%2580%2593%2Bpackage.json
 ```
 - Technical team
 ```

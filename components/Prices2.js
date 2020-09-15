@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 function Prices2 (props) {
+    console.log('Prices2 component');
+    console.log(props);
     const [currency, setCurrency] = useState('USD');
     return (
         <div>
@@ -10,7 +12,7 @@ function Prices2 (props) {
                     <strong>{props.bpi[currency].rate}</strong>
                 </li>
             </ul>
-            <label for='type'>Choose a Currency Type:</label>
+            <label htmlFor='type'>Choose a Currency Type:</label>
             <select id='type' onChange={ e =>setCurrency(e.target.value) } className='form-control'>
                 <option label='USD' value='USD'>USD</option>
                 <option label='GBP' value='GBP'>GBP</option>
