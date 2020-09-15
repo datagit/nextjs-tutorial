@@ -3,12 +3,12 @@ import Layout from "../../components/Layout";
 
 const Post = () => {
     const router = useRouter()
-    const { pid } = router.query
+    const { pid, type } = router.query
 
     return (
         <Layout>
             <div>
-                <h1>Post pid={pid}</h1>
+                <h1>Post pid={pid}, type={type}</h1>
             </div>
         </Layout>
     )

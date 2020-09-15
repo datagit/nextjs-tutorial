@@ -18,6 +18,9 @@ const Navbar = () => (
                         <li>
                             <Link href='/blog/1'><a>post 1</a></Link>
                         </li>
+                        <li>
+                            <Link href='/blog/1/a-comment'><a>post detail slug comment</a></Link>
+                        </li>
                     </ul>
                 </div>
             </div>
