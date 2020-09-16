@@ -3,14 +3,12 @@ import Layout from '../components/Layout';
 
 //import Prices from '../components/Prices';
 import Prices2 from '../components/Prices2';
-import Bpi from "../components/Bpi";
 const Index = (props) => (
     <Layout>
         <div>
             <h1 style={{color:'#6E6E6E'}}>BitsPrice</h1>
             <p>Check current Bitcoin rate</p>
             <Prices2 bpi={props.bpi}/>
-            <Bpi/>
         </div>
     </Layout>
 );

@@ -12,6 +12,9 @@ const Navbar = () => (
                         <Link href='/about'><a>About</a></Link>
                     </li>
                     <li>
+                        <Link href='/js'><a>Js Page: client side rendering fetching data</a></Link>
+                    </li>
+                    <li>
                         <Link href='/blog/first-post'><a>first post</a></Link>
                     </li>
                     <li>
