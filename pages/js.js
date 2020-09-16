@@ -26,13 +26,5 @@ const Js = () => {
         </Layout>
     );
 }
-export async function getStaticProps() {
-    // `getStaticProps` is invoked on the server-side,
-    // so this `fetcher` function will be executed on the server-side.
-    const posts = await fetcher('https://api.coindesk.com/v1/bpi/currentprice.json');
-    console.log('getStaticProps');
-    console.log(posts);
-    return { props: { posts } }
-}
 
 export default Js;

@@ -10,6 +10,8 @@ const Index = (props) => (
             <p>Check current Bitcoin rate</p>
             <Prices2 bpi={props.bpi}/>
             <h1>config on server(CIRCLE_NODE_TOTAL): {process.env.CIRCLE_NODE_TOTAL}</h1>
+            <h1>config on server(WRONG2): {process.env.WRONG2}</h1>
+            process.env.ENV_NAME={process.env.ENV_NAME}
         </div>
     </Layout>
 );
@@ -27,12 +29,15 @@ const Index = (props) => (
 
 //This gets called on every request
 export async function getServerSideProps() {
+    //only run at server side
+    console.log("ENV_NAME=" + process.env.ENV_NAME);
+    // console.log(process.env.CIRCLE_NODE_TOTAL);
+    // console.log(process.env.DB_HOST);
+    // console.log(process.env.WRONG);
+
     // Fetch data from external API
     const res = await fetch('https://api.coindesk.com/v1/bpi/currentprice.json')
     const data = await res.json()
-
-    console.log('getServerSideProps');
-    console.log(data);
     // Pass data to the page via props
     return { props: data }
 }
