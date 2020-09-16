@@ -36,6 +36,16 @@ function Props (props) {
   // ...
 }
 ```
+``` testing: guide >> https://medium.com/frontend-digest/setting-up-testing-library-with-nextjs-a9702cbde32d
+    npm install jest jest-dom @testing-library/react @testing-library/jest-dom @testing-library/dom babel-jest
+   .babelrc
+   	components/Title.js
+   	jest.config.js
+    tests/
+    изибиб components
+    ив        ижибиб title.test.js
+    ижибиб setup.js
+```
 
 - Technical team
 ```
