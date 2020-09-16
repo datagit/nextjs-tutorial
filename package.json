@@ -12,6 +12,7 @@
     "@testing-library/dom": "^7.24.2",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.0.4",
+    "antd": "^4.6.4",
     "babel-jest": "^26.3.0",
     "isomorphic-unfetch": "^3.0.0",
     "jest": "^26.4.2",
