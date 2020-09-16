@@ -46,6 +46,9 @@ function Props (props) {
     ив        ижибиб title.test.js
     ижибиб setup.js
 ```
+``` styled-jsx: https://github.com/datagit/styled-jsx
+
+```
 
 - Technical team
 ```

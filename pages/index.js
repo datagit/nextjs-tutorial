@@ -3,6 +3,7 @@ import Layout from '../components/Layout';
 
 //import Prices from '../components/Prices';
 import Prices2 from '../components/Prices2';
+import StyleJsxOne from "../components/StyleJsxOne";
 const Index = (props) => (
     <Layout>
         <div>
@@ -11,7 +12,8 @@ const Index = (props) => (
             <Prices2 bpi={props.bpi}/>
             <h1>config on server(CIRCLE_NODE_TOTAL): {process.env.CIRCLE_NODE_TOTAL}</h1>
             <h1>config on server(WRONG2): {process.env.WRONG2}</h1>
-            process.env.ENV_NAME={process.env.ENV_NAME}
+            <h1>process.env.ENV_NAME={process.env.ENV_NAME}</h1>
+            <StyleJsxOne/>
         </div>
     </Layout>
 );
