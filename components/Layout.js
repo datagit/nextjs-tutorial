@@ -7,9 +7,7 @@ const Layout = (props) => (
             <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
         </Head>
         <Navbar/>
-        <div className='container'>
-            {props.children}
-        </div>
+        <div className='container'>{props.children}</div>
     </main>
 );
 export default Layout;
