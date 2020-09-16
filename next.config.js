@@ -1,5 +1,5 @@
 module.exports = {
     env: {
-        customKey: 'my-value',
+        CIRCLE_NODE_TOTAL: 100,
     },
 }
