@@ -91,3 +91,5 @@ https://operator.tanomel.scrum-dev.com/
 https://tanomel.scrum-dev.com/signin
     chicuong.au@gree.net/Aa123456@
 ```
+
+VS-Code tutorial: https://www.youtube.com/watch?v=VqCgcpAypFQ
