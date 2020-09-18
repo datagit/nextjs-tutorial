@@ -49,6 +49,10 @@ function Props (props) {
 ``` styled-jsx: https://github.com/datagit/styled-jsx
 
 ```
+#### packages
+- https://underscorejs.org/#isEmpty
+- https://react-hook-form.com/get-started
+- https://github.com/amarofashion/react-credit-cards
 
 - Technical team
 ```
@@ -63,4 +67,12 @@ admin web
 	https://ant.design/
 design from PSD
 	https://app.zeplin.io/
+```
+
+
+```
+https://operator.tanomel.scrum-dev.com/
+    chicuong.au@grevo.net/Aa123456@
+https://tanomel.scrum-dev.com/signin
+    chicuong.au@gree.net/Aa123456@
 ```
