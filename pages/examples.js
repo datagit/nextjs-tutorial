@@ -3,6 +3,7 @@ import Layout from '../components/Layout';
 
 import AntDesignExamples from "../components/AntDesignExamples";
 import ReactHookFormExamples from "../components/ReactHookFormExamples";
+import FilterableProductTable from '../components/FilterableProductTable';
 const Examples = (props) => (
     <Layout>
         <div>
@@ -10,6 +11,9 @@ const Examples = (props) => (
         </div>
         <div>
             <ReactHookFormExamples/>
+        </div>
+        <div>
+            <FilterableProductTable/>
         </div>
     </Layout>
 );

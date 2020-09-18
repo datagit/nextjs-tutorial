@@ -6,13 +6,12 @@ import Link from 'next/link';
 import {
     SyncOutlined,
 } from '@ant-design/icons';
-const sum1 = require('../utility/common');
+
 
 
 class AntDesignExamples extends React.Component {
     constructor(props) {
         super(props);
-        console.log(sum1(10,20));
     }
 
     state = {

@@ -92,7 +92,10 @@ https://tanomel.scrum-dev.com/signin
     chicuong.au@gree.net/Aa123456@
 ```
 
+
 VS-Code tutorial: https://www.youtube.com/watch?v=VqCgcpAypFQ
 
 Node.js modules: require, exports, imports and beyond
 https://adrianmejia.com/getting-started-with-node-js-modules-require-exports-imports-npm-and-beyond/
+
+VS-Code tutorial: https://www.youtube.com/watch?v=VqCgcpAypFQ
