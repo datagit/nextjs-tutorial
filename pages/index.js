@@ -32,6 +32,7 @@ const Index = (props) => (
 //This gets called on every request
 export async function getServerSideProps() {
     //only run at server side
+    //debugger;
     console.log("ENV_NAME=" + process.env.ENV_NAME);
     // console.log(process.env.CIRCLE_NODE_TOTAL);
     // console.log(process.env.DB_HOST);

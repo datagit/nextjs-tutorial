@@ -18,6 +18,21 @@ This is a starter template for [Learn Next.js](https://nextjs.org/learn).
     debug javascript with PHPStrom
         client: https://www.evernote.com/shard/s436/client/snv?noteGuid=7dd35fba-f6ea-4495-85f1-d18214fc784f&noteKey=ab549296f7a0d104&sn=https%3A%2F%2Fwww.evernote.com%2Fshard%2Fs436%2Fsh%2F7dd35fba-f6ea-4495-85f1-d18214fc784f%2Fab549296f7a0d104&title=Run%252FDebug%2BConfigurations%2Band%2Bnextjs-tutorial%2B%25E2%2580%2593%2Bpackage.json
         server: https://www.evernote.com/shard/s436/client/snv?noteGuid=9e2163e0-1568-480f-b8ed-fc6e51f4ccd2&noteKey=d25aa38c4c3b7987&sn=https%3A%2F%2Fwww.evernote.com%2Fshard%2Fs436%2Fsh%2F9e2163e0-1568-480f-b8ed-fc6e51f4ccd2%2Fd25aa38c4c3b7987&title=Run%252FDebug%2BConfigurations%2Band%2Bnextjs-tutorial%2B%25E2%2580%2593%2Bpackage.json
+    debug with VS code: https://dev.to/vvo/5-steps-to-debugging-next-js-node-js-from-vscode-or-chrome-devtools-497o
+        .vscode/launch.json
+            "configurations": [
+            
+                {
+                    "type": "node",
+                    "request": "attach",
+                    "name": "Launch Program",
+                    "skipFiles": [
+                        "<node_internals>/**"
+                    ],
+                    "protocol": "inspector",
+                    "port": 9229
+                }
+            ]
 ```
 ```js config env: https://nextjs.org/docs/basic-features/environment-variables#exposing-environment-variables-to-the-browser
 
@@ -42,9 +57,9 @@ function Props (props) {
    	components/Title.js
    	jest.config.js
     tests/
-    ¨§¨¡¨¡ components
-    ¨¢        ¨¦¨¡¨¡ title.test.js
-    ¨¦¨¡¨¡ setup.js
+    ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ components
+    ï¿½ï¿½        ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ title.test.js
+    ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ setup.js
 ```
 ``` styled-jsx: https://github.com/datagit/styled-jsx
 

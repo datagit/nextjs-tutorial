@@ -1,7 +1,11 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import styled from '@emotion/styled';
 
 export default function ReactHookFormExamples() {
+    const span = styled.span`
+    color: red;
+    `
     const { register, handleSubmit, watch, errors } = useForm();
     const onSubmit = data => console.log(data);
 
@@ -14,7 +18,7 @@ export default function ReactHookFormExamples() {
         <input name="example" defaultValue="test" ref={register} />
 
         {/* include validation with required or other standard HTML validation rules */}
-        <input name="exampleRequired" ref={register({ required: true })} />`
+        <input name="exampleRequired" ref={register({ required: true })} />
         {/* errors will return when field validation fails  */}
         {errors.exampleRequired && <span>This field is required</span>}
 
