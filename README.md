@@ -21,7 +21,7 @@ This is a starter template for [Learn Next.js](https://nextjs.org/learn).
     debug with VS code: https://dev.to/vvo/5-steps-to-debugging-next-js-node-js-from-vscode-or-chrome-devtools-497o
         .vscode/launch.json
             "configurations": [
-            
+
                 {
                     "type": "node",
                     "request": "attach",

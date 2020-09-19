@@ -30,11 +30,11 @@ const ProductTable = (props) => {
     products.forEach(product => {
         if (product.category !== lastCategory) {
             rows.push(
-                <ProductCategoryRow category={product.category} key={product.category}/>
+                <ProductCategoryRow category={product.category} key={rows.length}/>
             );
         }
         rows.push(
-            <ProductRow product={product} key={product}/>
+            <ProductRow product={product} key={rows.length}/>
         );
         lastCategory = product.category;
     });
@@ -45,17 +45,19 @@ const ProductTable = (props) => {
                 <th>Name</th>
                 <th>Price</th>
             </tr>
-        </thead>        
+        </thead>
     <tbody>{rows}</tbody>
     </table>
     );
 }
 
 const SearchBar = () => {
+    let labelText = 'labelText';
     return (
         <form>
             <p>
-            <input name="q" placeholder="Search..."/>
+            <input name="q" placeholder="Search..." ref={input => input && input.focus()} aria-label={labelText}
+            />
             </p>
             <p>
             <input type="checkbox" name="s" value='1'/> {' '}
@@ -73,7 +75,7 @@ const FilterableProductTable = () => {
         {category: 'Electronics', price: '$99.99', stocked: true, name: 'iPod Touch'},
         {category: 'Electronics', price: '$399.99', stocked: false, name: 'iPhone 5'},
         {category: 'Electronics', price: '$199.99', stocked: true, name: 'Nexus 7'}
-    ]; 
+    ];
     return (
         <div>
             <br/>
