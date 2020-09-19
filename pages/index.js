@@ -1,5 +1,6 @@
 import Fetch from 'isomorphic-unfetch';
 import Layout from '../components/Layout';
+import MyRedirect from '../components/MyRedirect';
 
 //import Prices from '../components/Prices';
 import Prices2 from '../components/Prices2';
@@ -14,6 +15,7 @@ const Index = (props) => (
             <h1>config on server(WRONG2): {process.env.WRONG2}</h1>
             <h1>process.env.ENV_NAME={process.env.ENV_NAME}</h1>
             <StyleJsxOne/>
+            <MyRedirect/>
         </div>
     </Layout>
 );
