@@ -5,8 +5,8 @@ import AntDesignExamples from "../components/AntDesignExamples";
 import ReactHookFormExamples from "../components/ReactHookFormExamples";
 import FilterableProductTable from '../components/FilterableProductTable';
 const Examples = (props) => {
-    console.log('at CSR ');
-    console.log(props.time.updated);
+    // console.log('at CSR ');
+    // console.log(props);
     return (
         <Layout>
             {/* <div>
@@ -23,7 +23,7 @@ const Examples = (props) => {
 }
 
 //This gets called on every request
-export async function getServerSideProps() {
+export async function getServerSideProps(appContext) {
     //only run at server side
     //debugger;
     console.log("at SSR ENV_NAME=" + process.env.ENV_NAME);

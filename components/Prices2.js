@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 function Prices2 (props) {
     // console.log('Prices2 component');
-    // console.log(props);
+    console.log(props);
     const [currency, setCurrency] = useState('USD');
+
     return (
         <div>
             <ul>

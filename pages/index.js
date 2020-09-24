@@ -4,20 +4,24 @@ import Layout from '../components/Layout';
 //import Prices from '../components/Prices';
 import Prices2 from '../components/Prices2';
 import StyleJsxOne from "../components/StyleJsxOne";
-const Index = (props) => (
-    <Layout>
-        <div>
-        <Prices2 bpi={props.bpi}/>
-            {/* <h1 style={{color:'#6E6E6E'}}>BitsPrice</h1>
-            <p>Check current Bitcoin rate</p> */}
-            
-            {/* <h1>config on server(CIRCLE_NODE_TOTAL): {process.env.CIRCLE_NODE_TOTAL}</h1>
-            <h1>config on server(WRONG2): {process.env.WRONG2}</h1>
-            <h1>process.env.ENV_NAME={process.env.ENV_NAME}</h1>
-            <StyleJsxOne/> */}
-        </div>
-    </Layout>
-);
+const Index = (props) =>  {
+    console.log('Index CSR');
+    console.log(props);
+    return (
+        <Layout>
+            <div>
+            <Prices2 bpi={props.bpi}/>
+                {/* <h1 style={{color:'#6E6E6E'}}>BitsPrice</h1>
+                <p>Check current Bitcoin rate</p> */}
+
+                {/* <h1>config on server(CIRCLE_NODE_TOTAL): {process.env.CIRCLE_NODE_TOTAL}</h1>
+                <h1>config on server(WRONG2): {process.env.WRONG2}</h1>
+                <h1>process.env.ENV_NAME={process.env.ENV_NAME}</h1>
+                <StyleJsxOne/> */}
+            </div>
+        </Layout>
+    );
+}
 
 // Index.getInitialProps = async function() {
 //     const res = await fetch('https://api.coindesk.com/v1/bpi/currentprice.json');
@@ -41,7 +45,7 @@ export async function getServerSideProps() {
 
     // Fetch data from external API
     const res = await fetch('https://api.coindesk.com/v1/bpi/currentprice.json')
-    const data = await res.json()
+    const data = await res.json();
     // Pass data to the page via props
     return { props: data }
 }

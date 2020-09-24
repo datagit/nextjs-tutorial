@@ -6,5 +6,7 @@ import 'antd/dist/antd.css';
 
 // This default export is required in a new `pages/_app.js` file.
 export default function MyApp({ Component, pageProps }) {
-    return <Component {...pageProps} />
+    // check user is LOGIN at here
+    // ex: my_name
+    return <Component {...pageProps}  my_name="DAT_DAO"/>
 }

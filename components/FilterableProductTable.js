@@ -78,9 +78,9 @@ const ArticleFilter = ({ funcSetData }) => {
             const result = await axios('https://hn.algolia.com/api/v1/search?query=' + query);
             if (!ignore) {
                 // data from parent
-                console.log(funcSetData);
+                // console.log(funcSetData);
                 funcSetData(result.data);
-                console.log(result.data);
+                // console.log(result.data);
             }
         }
 
