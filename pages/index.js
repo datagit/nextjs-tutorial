@@ -7,13 +7,14 @@ import StyleJsxOne from "../components/StyleJsxOne";
 const Index = (props) => (
     <Layout>
         <div>
-            <h1 style={{color:'#6E6E6E'}}>BitsPrice</h1>
-            <p>Check current Bitcoin rate</p>
-            <Prices2 bpi={props.bpi}/>
-            <h1>config on server(CIRCLE_NODE_TOTAL): {process.env.CIRCLE_NODE_TOTAL}</h1>
+        <Prices2 bpi={props.bpi}/>
+            {/* <h1 style={{color:'#6E6E6E'}}>BitsPrice</h1>
+            <p>Check current Bitcoin rate</p> */}
+            
+            {/* <h1>config on server(CIRCLE_NODE_TOTAL): {process.env.CIRCLE_NODE_TOTAL}</h1>
             <h1>config on server(WRONG2): {process.env.WRONG2}</h1>
             <h1>process.env.ENV_NAME={process.env.ENV_NAME}</h1>
-            <StyleJsxOne/>
+            <StyleJsxOne/> */}
         </div>
     </Layout>
 );
