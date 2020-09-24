@@ -19,7 +19,7 @@ export default function StyleJsxOne(props) {
 
     console.log('sum1');
     console.log(common.sum1(10,20));
-    console.log(common.ConsoleLogHelper("string"));
+    common.consoleLogHelper("string")
     //console.log(common.sum1(2,3));
     let isLoading = true;
     let error = undefined;

@@ -4,6 +4,10 @@ import Layout from '../components/Layout';
 import AntDesignExamples from "../components/AntDesignExamples";
 import ReactHookFormExamples from "../components/ReactHookFormExamples";
 import FilterableProductTable from '../components/FilterableProductTable';
+
+import { area, circumference } from '../utility/common';
+import Cat from '../utility/cat';
+
 const Examples = (props) => {
     // console.log('at CSR ');
     // console.log(props);
@@ -16,7 +20,7 @@ const Examples = (props) => {
                 <ReactHookFormExamples/>
             </div> */}
             <div>
-                <FilterableProductTable/>
+                <FilterableProductTable />
             </div>
         </Layout>
     );
@@ -24,6 +28,23 @@ const Examples = (props) => {
 
 //This gets called on every request
 export async function getServerSideProps(appContext) {
+    const circle = require('../utility/common');
+
+    const r = 3;
+    console.log(`Circle with radius ${r} has
+    area: ${circle.area(r)};
+    circumference: ${circle.circumference(r)}`);
+
+    console.log(`Circle with radius ${r} has
+  area: ${area(r)};
+  circunference: ${circumference(r)}`);
+
+
+    // const Cat = require('../utility/cat');
+    const cat = new Cat();
+    console.log(cat.makeSound());
+
+
     //only run at server side
     //debugger;
     console.log("at SSR ENV_NAME=" + process.env.ENV_NAME);
